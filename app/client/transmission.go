@@ -55,7 +55,7 @@ func (t *Transmission) Torrents(hashes []string) ([]*Torrent, error) {
 			DownloadPath: *t.DownloadDir,
 			Status:       TorrentStatus(*t.Status),
 			Name:         *t.Name,
-			IsFinished:   *t.IsFinished,
+			IsFinished:   t.DoneDate.Unix() > 0,
 		})
 	}
 
