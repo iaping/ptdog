@@ -1,0 +1,54 @@
+{
+    "http": {
+        "addr": "127.0.0.1:1689"
+    },
+    "system": {
+        "sleep": 15
+    },
+    "clients": [
+        {
+            "enable": true,
+            "https": false,
+            "type": 0,
+            "host": "127.0.0.1",
+            "username": "admin",
+            "password": "123456",
+            "port": 9091,
+            "timeout": 60,
+            "dir": "/Users/aping/Downloads",
+            "skip_checking": false
+        },
+        {
+            "enable": true,
+            "https": false,
+            "type": 1,
+            "host": "127.0.0.1",
+            "username": "admin",
+            "password": "123456",
+            "port": 8080,
+            "timeout": 60,
+            "dir": "/Users/aping/Downloads",
+            "skip_checking": false
+        }
+    ],
+    "websites": [
+        {
+            "enable": true,
+            "name": "ptcafe",
+            "domain": "https://ptcafe.club",
+            "api": "https://ptcafe.club/api/pieces-hash",
+            "passkey": "your passkey",
+            "download": "",
+            "limit": 0
+        },
+        {
+            "enable": true,
+            "name": "hdtime",
+            "domain": "https://hdtime.org",
+            "api": "https://hdtime.org/api/pieces-hash",
+            "passkey": "your passkey",
+            "download": "",
+            "limit": 0
+        }
+    ]
+}

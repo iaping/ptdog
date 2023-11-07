@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+      body {
+        padding-top: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">PTDog</a>
+          <div class="navbar-nav me-auto mb-2 mb-md-0">
+            <span class="badge">PT站点自动辅种工具，支持开放pieces_hash查询的站点。未适配的站点请联系！QQ群: 123456789</span>
+          </div>
+          <span class="badge">v1.0</span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">站点</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">下载器</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">系统</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="pt-3 pb-3">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#website" data-bs-whatever="@mdo">新增站点</button>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>
+        </div>
+      </div>
+    </main>
+
+
+    <div class="modal fade" id="website" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">站点</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="col-form-label">名称:</label>
+                <input type="text" class="form-control" id="name" placeholder="站点名称">
+              </div>
+              <div class="mb-3">
+                <label for="domain" class="col-form-label">域名:</label>
+                <input class="form-control" id="domain" placeholder="站点域名，会用于拼接种子下载链接">
+              </div>
+              <div class="mb-3">
+                <label for="api" class="col-form-label">api:</label>
+                <input class="form-control" id="api" placeholder="pieces hash查询的接口地址">
+              </div>
+              <div class="mb-3">
+                <label for="passkey" class="col-form-label">passkey:</label>
+                <input class="form-control" id="passkey" placeholder="你账户的密钥">
+              </div>
+              <div class="mb-3">
+                <label for="limit" class="col-form-label">每批次查询限额:</label>
+                <input class="form-control" id="limit" placeholder="默认0，每批次查询100个Hash">
+              </div>
+              <div class="mb-3">
+                <label for="download" class="col-form-label">自定义种子下载链接:</label>
+                <input class="form-control" id="download" placeholder="默认留空">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.min.js" type="application/javascript"></script>
+  </body>
+</html>
