@@ -1,6 +1,6 @@
 NAME=PTDog
 BINDIR=bin
-VERSION=1.0
+VERSION=1.0.0
 GOBUILD=CGO_ENABLED=0 go build -trimpath -ldflags '-w -s'
 
 all: linux-amd64 darwin-amd64 windows-amd64

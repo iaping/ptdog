@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	Version = "v1.0"
+	Version = "v1.0.0"
 )
 
 type App struct {
