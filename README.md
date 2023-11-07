@@ -8,7 +8,8 @@
 本计划自带web管理面板的，但实在不想写前端，可能在不久也会继续完善吧（有没有大佬能fork来完善一下管理面板呢）。暂时先自行配置[config.json](config.json)吧。
 
 ## 运行
-下载相关平台的二进制程序或自行编译，下载或复制config.json，运行程序
+下载相关平台的二进制程序或自行编译，下载或复制config.json，运行程序。
+[去Releases下载](https://github.com/iaping/ptdog/releases)
 
 ## 配置说明
 ```json
