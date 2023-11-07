@@ -70,9 +70,9 @@ func (s *Scanner) torrents() (map[string]*client.Torrent, error) {
 
 	var torrents = make(map[string]*client.Torrent)
 	for _, t := range data {
-		// if !t.IsFinished {
-		// 	continue
-		// }
+		if !t.IsFinished {
+			continue
+		}
 
 		// if !t.Seeding() {
 		// 	continue
