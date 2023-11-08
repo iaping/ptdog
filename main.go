@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"ptdog/app"
 	"ptdog/app/config"
@@ -17,11 +18,17 @@ func init() {
 }
 
 func main() {
+	defer func() {
+		fmt.Println("Press 'Enter' to continue...")
+		fmt.Scanln()
+	}()
+
 	if err := config.Load("config.json"); err != nil {
-		log.Panic().Err(err).Msg("配置加载失败")
+		log.Err(err).Str("配置", "config.json").Msg("配置加载失败")
+		return
 	}
 
 	if err := app.New().Run(); err != nil {
-		log.Panic().Err(err).Send()
+		log.Err(err).Send()
 	}
 }
