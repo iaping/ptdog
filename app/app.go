@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	Version = "v1.0.0"
+	Version = "v1.0"
 )
 
 type App struct {
@@ -29,6 +29,4 @@ func (app *App) Run() (err error) {
 func (app *App) info() {
 	log.Info().Msgf("PTDog %s", Version)
 	log.Info().Msg("PT站点自动辅种工具，支持开放pieces_hash查询的站点。未适配的站点请联系！")
-	log.Info().Msg("QQ群: 881030035")
-	log.Info().Msg("Telegram: https://t.me/+ibBCW1uE4Zs5ODk1")
 }
