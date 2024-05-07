@@ -96,3 +96,6 @@
 | 2xfree | https://pt.2xfree.org | https://pt.2xfree.org/api/pieces-hash |  
 | 阿童木 | https://hdatmos.club | https://hdatmos.club/api/pieces-hash |  
 | 3wmg明教 | https://www.3wmg.com | https://www.3wmg.com/api/pieces-hash |  
+
+## 计划
+star数量上到20+，增加web管理界面！！！
